@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/en_layout}">
+<head>
+    <title>Current Projects</title>
+</head>
+<body>
+<th:block layout:fragment="content">
+    <div class="container-fluid bg-primary py-5 bg-header-investor" style="margin-bottom: 90px;">
+        <div class="row py-5">
+            <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                <h1 class="display-4 text-white animated zoomIn">PaDO</h1>
+                <div class="h5 text-white">Current Project</div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="section-title position-relative pb-3 mb-5 text-center">
+                <h5 class="fw-bold text-primary text-uppercase">Project</h5>
+                <h1 class="mb-0" style="font-size: 60px;">PaDO</h1>
+            </div>
+            <div class="container-fluid py-5 bg-light">
+                <div class="container">
+                    <div class="row g-5 align-items-center text-center">
+                        <div class="col-lg-6">
+                            <div class="position-relative" style="min-height: 300px;">
+                                <img class="w-100 h-100 rounded" src="/img/Pado.png" style="object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h4 class="text-dark">
+                                PaDO is an autonomous fountain system focused on preventing and removing algal blooms. It is an innovative solution that detects algae early through sensors and data analysis, improves water quality in an environmentally friendly way, and enhances the city's appearance.
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Service Start -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">PaDO</h5>
+                <h1 class="mb-0">Key Technologies & Advantages</h1>
+            </div>
+            <div class="row g-5">
+                <!-- First Row -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item bg-white rounded d-flex flex-column align-items-center justify-content-center text-center" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                        <div class="service-icon">
+                            <img src="/img/icon_wind.png" alt="Icon 1">
+                        </div>
+                        <h4 class="mb-3">Improved Water Circulation</h4>
+                        <p class="m-0">Improves water circulation, a major cause of algae blooms.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item bg-white rounded d-flex flex-column align-items-center justify-content-center text-center" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                        <div class="service-icon">
+                            <img src="/img/icon_monitoring.png" alt="Icon 2">
+                        </div>
+                        <h4 class="mb-3">Water Quality Monitoring</h4>
+                        <p class="m-0">Real-time monitoring of water quality through various sensors.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item bg-white rounded d-flex flex-column align-items-center justify-content-center text-center" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                        <div class="service-icon">
+                            <img src="/img/icon_warning.png" alt="Icon 3">
+                        </div>
+                        <h4 class="mb-3">Early Warning</h4>
+                        <p class="m-0">Early warnings and preventive measures for algae blooms.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item bg-white rounded d-flex flex-column align-items-center justify-content-center text-center" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                        <div class="service-icon">
+                            <img src="/img/icon_broken.png" alt="Icon 4">
+                        </div>
+                        <h4 class="mb-3">Autonomous Fountain</h4>
+                        <p class="m-0">Automation of autonomous fountains for accurate and quick algae removal.</p>
+                    </div>
+                </div>
+                <!-- Second Row -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item bg-white rounded d-flex flex-column align-items-center justify-content-center text-center" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                        <div class="service-icon">
+                            <img src="/img/icon_lowprice.png" alt="Icon 5">
+                        </div>
+                        <h4 class="mb-3">Cost Reduction</h4>
+                        <p class="m-0">Reduces labor and costs by incorporating various functions with in-house technology.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item bg-white rounded d-flex flex-column align-items-center justify-content-center text-center" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                        <div class="service-icon">
+                            <img src="/img/icon_flower.png" alt="Icon 6">
+                        </div>
+                        <h4 class="mb-3">Aesthetic Improvement</h4>
+                        <p class="m-0">Provides suitable aesthetics through fountain functionality and environmental adaptation.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item bg-white rounded d-flex flex-column align-items-center justify-content-center text-center" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                        <div class="service-icon">
+                            <img src="/img/icon_design.png" alt="Icon 7">
+                        </div>
+                        <h4 class="mb-3">Customizable Design</h4>
+                        <p class="m-0">Customizable design and LED lighting systems according to usage.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item bg-white rounded d-flex flex-column align-items-center justify-content-center text-center" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                        <div class="service-icon">
+                            <img src="/img/icon_nature.png" alt="Icon 8">
+                        </div>
+                        <h4 class="mb-3">Eco-Friendly Technology</h4>
+                        <p class="m-0">Environmentally friendly technology using natural water circulation while minimizing chemical use.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Case Studies Start -->
+    <!--
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">PaDO</h5>
+                <h1 class="mb-0">Case Studies</h1>
+            </div>
+            <div class="container-fluid py-5 bg-light">
+                <div class="container">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6 order-lg-2">
+                            <div class="position-relative" style="min-height: 300px;">
+                                <img class="w-100 h-100 rounded" src="/img/growith_logo_bluewhaleoh.png" style="max-width: 500px;">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="pb-3 mb-3">
+                                <h2 class="mb-0"> Case studies for PaDO are currently being prepared. </h2>
+                            </div>
+                            <p> </p>
+                            <p> </p>
+                            <p> </p>
+                            <div class="pb-3 mb-3">
+                                <h2 class="mb-0"> </h2>
+                            </div>
+                            <p> </p>
+                            <p> </p>
+                            <p> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+    <!-- Case Studies End -->
+
+    <!-- Vendor Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5 mb-5">
+            <div class="bg-white">
+                <!-- Vendor content goes here -->
+            </div>
+        </div>
+    </div>
+    <!-- Vendor End -->
+
+</th:block>
+</body>
+</html>

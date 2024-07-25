@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/en_layout}">
+<head>
+    <title>Projects</title>
+</head>
+<body>
+<th:block layout:fragment="content">
+    <div class="container-fluid bg-primary py-5 bg-header-investor" style="margin-bottom: 90px;">
+        <div class="row py-5">
+            <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                <h1 class="display-4 text-white animated zoomIn">Projects</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+    <!-- Title Start -->
+    <div class="container-fluid py-5">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">GROWITH</h5>
+            <h1 class="mb-0">Past Projects</h1>
+        </div>
+    </div>
+    <!-- Title End -->
+
+    <!-- Project 1 Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="section-title position-relative pb-3 mb-5">
+                        <h3 class="mb-0">Campus Startup Club ZERO</h3>
+                    </div>
+                    <h6 class="mb-4">
+                        Our team members came together with a common problem of lacking a proper club during our studies. This gathering gradually developed into a large club with 70 members, evolving beyond a simple meeting to become a startup club undertaking various projects. These experiences have laid the foundation for collaboration among team members and the generation of innovative ideas.
+                    </h6>
+                </div>
+                <div class="col-lg-5" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded" src="/img/zero.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project 1 End -->
+
+    <!-- Project 2 Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-5" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute h-100 rounded" src="/img/carstopper.png" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="section-title position-relative pb-3 mb-5">
+                        <h3 class="mb-0">Car Stopper Development for Quick Parking</h3>
+                    </div>
+                    <h6 class="mb-4">
+                        In 2023, through a project organized by the Ministry of Science and ICT, our team developed a car stopper with an integrated location-detecting camera. This technology optimizes the use of parking spaces and significantly enhances user convenience. The project’s results were scientifically validated and eventually published in a paper that won a gold award, officially recognizing Growith’s technological prowess and innovative approach.
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project 2 End -->
+
+    <!-- Upcoming Projects Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">GROWITH</h5>
+                <h1 class="mb-0">Upcoming Projects</h1>
+            </div>
+            <div class="row g-4"> <!-- Gap adjustment -->
+                <div class="col-lg-6">
+                    <div class="blog-item bg-light rounded overflow-hidden" style="height: 200px;">
+                        <div class="p-4" style="height: 100%; overflow: hidden;">
+                            <h4 class="mb-3">Autonomous Park Environment Management Mobility</h4>
+                            <p>
+                                This project will be conducted at the mobility camp hosted by the Academy. We aim to develop an autonomous park environment management mobility system based on user requests. This system will automate park maintenance tasks, ensuring cleanliness and providing a pleasant environment for visitors.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="blog-item bg-light rounded overflow-hidden" style="height: 200px;">
+                        <div class="p-4" style="height: 100%; overflow: hidden;">
+                            <h4 class="mb-3">Planning and App Development for University Student Contests and External Activities</h4>
+                            <p>
+                                We will plan contests and external activities for university students and develop a platform app to manage them. This platform will provide information on various contests and external opportunities, making it easier for students to participate.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Upcoming Projects End -->
+
+    <!-- Vendor Start -->
+
+    <!-- Vendor End -->
+
+</th:block>
+</body>
+</html>

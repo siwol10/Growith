@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html xmlns:th="http//www.thymeleaf.org"
+         xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+         layout:decorate="~{layouts/layout}">
+<head>
+	<title> about_team </title>
+</head>
+<body>
+	<th:block layout:fragment="content">
+	<div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+            <div class="row py-5">
+                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                    <h1 class="display-4 text-white animated zoomIn">팀 소개</h1>
+                    
+                </div>
+            </div>
+        </div>
+         <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+<!-- Team Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <!-- 팀원 아이템 -->
+            <div class="col-lg-3">
+                <div class="team-item bg-light rounded overflow-hidden">
+                    <div class="team-img position-relative overflow-hidden" style="height: 350px; background-color: #f8f9fa;">
+                        <img class="img-fluid w-100 h-100" src="/img/team_1.jpg" alt="" style="object-fit: cover;">
+                       <!--
+                        <div class="team-social">
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        </div>
+                        -->
+                    </div>
+                    <div class="text-center py-4">
+                        <h4 class="text-primary">강명준 (Kang Myungjun)</h4>
+                        <h5 class="text-uppercase m-0">대표</h5>
+                        <p class="text-muted">전기공학 학사, 하드웨어 및 소프트웨어 개발 경험, 프로젝트 관리 및 창업 경험 보유</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 팀원 아이템 반복 -->
+            <div class="col-lg-3">
+                <div class="team-item bg-light rounded overflow-hidden">
+                    <div class="team-img position-relative overflow-hidden" style="height: 350px; background-color: #f8f9fa;">
+                        <img class="img-fluid w-100 h-100" src="/img/team_2.jpg" alt="" style="object-fit: cover;">
+                        <!--
+                         <div class="team-social">
+                             <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                             <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                             <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                             <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                         </div>
+                         -->
+                     </div>
+                     <div class="text-center py-4">
+                         <h4 class="text-primary">이상준 (Lee Sangjun)</h4>
+                         <h5 class="text-uppercase m-0">HW 개발 및 주행 시스템 개발</h5>
+                         <p class="text-muted">전기전자제어공학부 제어계측, ISO9001 인증자격, 다양한 로봇 운영 시스템 연구 수행</p>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-lg-3">
+                 <div class="team-item bg-light rounded overflow-hidden">
+                     <div class="team-img position-relative overflow-hidden" style="height: 350px; background-color: #f8f9fa;">
+                         <img class="img-fluid w-100 h-100" src="/img/team_3.jpg" alt="" style="object-fit: cover;">
+                         <!--
+                         <div class="team-social">
+                             <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                             <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                             <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                             <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                         </div>
+                         -->
+                     </div>
+                     <div class="text-center py-4">
+                         <h4 class="text-primary">양진모 (Yang Jinmo)</h4>
+                         <h5 class="text-uppercase m-0">제어 시스템 개발</h5>
+                         <p class="text-muted">전기전자제어공학부 제어계측, 로봇 운영 시스템 과정 수료, 다양한 로봇 운영 시스템 연구 및 실험</p>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-lg-3">
+                 <div class="team-item bg-light rounded overflow-hidden">
+                     <div class="team-img position-relative overflow-hidden" style="height: 350px; background-color: #f8f9fa;">
+                         <img class="img-fluid w-100 h-100" src="/img/team_4.png" alt="" style="object-fit: cover;">
+                         <!--
+                         <div class="team-social">
+                             <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                             <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                             <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                             <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                         </div>
+                         -->
+                     </div>
+                     <div class="text-center py-4">
+                         <h4 class="text-primary">임종찬 (Lim Jongchan)</h4>
+                         <h5 class="text-uppercase m-0">기계 내관 및 설계</h5>
+                         <p class="text-muted">금형설계공학과 학부연구생, 기계공학 자격증 보유, 다양한 기계 설계 및 제품 생산 경험</p>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-lg-3">
+                 <div class="team-item bg-light rounded overflow-hidden">
+                     <div class="team-img position-relative overflow-hidden" style="height: 350px; background-color: #f8f9fa;">
+                         <img class="img-fluid w-100 h-100" src="/img/team_5.jpg" alt="" style="object-fit: cover;">
+                         <!--
+                         <div class="team-social">
+                             <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                             <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                             <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                             <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                         </div>
+                         -->
+                     </div>
+                     <div class="text-center py-4">
+                         <h4 class="text-primary">나연수 (Na Yeonsu)</h4>
+                         <h5 class="text-uppercase m-0">외관 디자인</h5>
+                         <p class="text-muted">디자인관리전공 학사, 대학생 홍보단 운영 및 다수의 디자인 프로젝트 수행</p>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-lg-3">
+                 <div class="team-item bg-light rounded overflow-hidden">
+                     <div class="team-img position-relative overflow-hidden" style="height: 350px; background-color: #f8f9fa;">
+                         <img class="img-fluid w-100 h-100" src="/img/team_6.jpg" alt="" style="object-fit: cover;">
+                         <!--
+                          <div class="team-social">
+                              <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                              <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                              <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                              <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                          </div>
+                          -->
+                      </div>
+                      <div class="text-center py-4">
+                          <h4 class="text-primary">윤승재 (Yoon Seungjae)</h4>
+                          <h5 class="text-uppercase m-0">프로젝트 매니저</h5>
+                          <p class="text-muted">전기전자제어공학부 반도체 전공, 다수의 프로젝트 관리 경험</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3">
+                  <div class="team-item bg-light rounded overflow-hidden">
+                      <div class="team-img position-relative overflow-hidden" style="height: 350px; background-color: #f8f9fa;">
+                          <img class="img-fluid w-100 h-100" src="/img/team_7.jpg" alt="" style="object-fit: cover;">
+                          <!--
+                          <div class="team-social">
+                              <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                              <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                              <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                              <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                          </div>
+                          -->
+                      </div>
+                      <div class="text-center py-4">
+                          <h4 class="text-primary">김민서 (Kim Minseo)</h4>
+                          <h5 class="text-uppercase m-0">사업 운영 및 서류 작성</h5>
+                          <p class="text-muted">전기공학 학사, 다수의 프로젝트 관리 및 마케팅 경험</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3">
+                  <div class="team-item bg-light rounded overflow-hidden">
+                      <div class="team-img position-relative overflow-hidden" style="height: 350px; background-color: #f8f9fa;">
+                          <img class="img-fluid w-100 h-100" src="/img/team_8.jpg" alt="" style="object-fit: cover;">
+                          <!--
+                          <div class="team-social">
+                              <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                              <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                              <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                              <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                          </div>
+                          -->
+                      </div>
+                      <div class="text-center py-4">
+                          <h4 class="text-primary">이현서 (Lee Hyunseo)</h4>
+                          <h5 class="text-uppercase m-0">SW 개발 및 알고리즘 개발</h5>
+                          <p class="text-muted">인공지능 학부, 다양한 SW 개발 및 알고리즘 연구 경험</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Team End -->
+
+        
+    </th:block>
+</body>
+</html>

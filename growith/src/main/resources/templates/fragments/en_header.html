@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:fragment="header">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- 탑 바 시작 -->
+
+    <!-- 탑 바 끝 -->
+
+
+
+
+    <!-- 네비게이션 바 시작 -->
+    <div class="container-fluid position-relative p-0">
+
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <a href="/" class="navbar-brand p-0">
+                <img src="/img/growith_logo_whitewhale.png" alt="Growith Whale Logo" class="whale-logo" style="height:45px;"> <!-- 고래 로고 -->
+                <img src="/img/growith_logo_white.png" alt="Growith Logo" class="main-logo" style="height:30px;"> <!-- 일반 로고 -->
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About us</a>
+                        <div class="dropdown-menu m-0">
+                            <a th:href="@{/en/about/overview}" class="dropdown-item">Company Overview</a>
+                            <a th:href="@{/en/about/team}" class="dropdown-item">Our Team</a>
+                            <a th:href="@{/en/about/history}" class="dropdown-item">Company History</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Project Introduction</a>
+                        <div class="dropdown-menu m-0">
+                            <a th:href="@{/en/projects/current}" class="dropdown-item">Current Project-PaDO</a>
+                            <a th:href="@{/en/projects/projects}" class="dropdown-item">All Projects</a>
+                            <a th:href="@{/en/projects/gallery}" class="dropdown-item">Product Gallery</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Customer Service</a>
+                        <div class="dropdown-menu m-0">
+                            <a th:href="@{/en/support/notice}" class="dropdown-item">Notices</a>
+                            <a th:href="@{/en/support/faq}" class="dropdown-item">FAQ</a>
+                            <a th:href="@{/en/support/contact}" class="dropdown-item">Contact Us</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Investor Information</a>
+                        <div class="dropdown-menu m-0">
+                            <a th:href="@{/en/investor/info/details}" class="dropdown-item">Investment Information</a>
+                            <a th:href="@{/en/investor/info/financial}" class="dropdown-item">Financial Information</a>
+                            <a th:href="@{/en/investor/info/press}" class="dropdown-item">Press Releases</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <!-- Navbar End -->
+</th:block>
+
+</html>

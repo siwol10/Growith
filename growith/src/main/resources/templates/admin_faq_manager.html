@@ -1,0 +1,402 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Growith - support_announcements</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Growith, announcements, support" />
+    <meta name="description" content="Growith support announcements page" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+    />
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link
+            href="/lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+    />
+    <link href="/lib/animate/animate.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="/css/style.css" rel="stylesheet" />
+
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/tailwind.output.css" />
+    <script
+            src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+            defer
+    ></script>
+    <!--    <script src="./assets_windmill/js/init-alpine.js"></script>-->
+    <!--    <script src="./assets_windmill/js/charts-lines.js" defer></script>-->
+    <!--    <script src="./assets_windmill/js/charts-pie.js" defer></script>-->
+
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
+    />
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+            defer
+    ></script>
+
+    <!-- css 2번쨰 템플릿-->
+    <!-- Bootstrap core CSS -->
+
+    <!-- Additional CSS Files -->
+
+    <link rel="stylesheet" href="/assets/css/animate.css" />
+
+    <!--
+
+  TemplateMo 574 Mexant
+
+  https://templatemo.com/tm-574-mexant
+
+  -->
+    <style>
+        .accordion-head {
+            padding: 35px 0px !important;
+            font-size: 22px;
+            font-weight: 600;
+            color: #212741;
+            cursor: pointer;
+            transition: color 200ms ease-in-out;
+        }
+
+        @media screen and (min-width: 768px) {
+            .accordion-head {
+                padding: 1rem;
+                font-size: 1.2rem;
+            }
+        }
+
+        .accordion-head .icon {
+            float: right;
+            transition: transform 200ms ease-in-out;
+        }
+
+        .accordion-head.is-open {
+            color: #43ba7f;
+            border-bottom: none;
+        }
+
+        .accordion-head.is-open .icon {
+            transform: rotate(45deg);
+        }
+
+        .accordion-body {
+            padding: 0px;
+            overflow: hidden;
+            height: 0;
+            transition: height 300ms ease-in-out;
+            border-bottom: 1px solid #fff;
+        }
+
+        .accordion-body > .content p {
+            padding: 0px 0px 30px 0px;
+            padding-top: 0;
+        }
+
+        section.top-section .left-image img {
+            border-radius: 10px;
+        }
+
+        section.top-section .accordions {
+            border-radius: 5px;
+            padding: 50px 40px;
+            background-color: #fff;
+            margin-left: 30px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+<!-- Spinner Start -->
+<div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+>
+    <div class="spinner"></div>
+</div>
+<!-- Spinner End -->
+
+<!-- 탑 바 시작 -->
+
+<!-- 탑 바 끝 -->
+
+<!-- 네비게이션 바 시작 -->
+<div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+        <a th:href="@{/}" class="navbar-brand p-0">
+            <img src="/img/growith_logo_whitewhale.png" alt="Growith Whale Logo" class="whale-logo" style="height: 45px" />
+            <!-- 고래 로고 -->
+            <img src="/img/growith_logo_white.png" alt="Growith Logo" class="main-logo" style="height: 30px" />
+            <!-- 일반 로고 -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <div class="nav-item dropdown">
+                    <a th:href="@{/admin/notice/manager}" class="nav-link dropdown-toggle">공지사항 관리</a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a th:href="@{/admin/image}" class="nav-link dropdown-toggle">사진 관리</a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a th:href="@{/admin/faq/manager}" class="nav-link dropdown-toggle">FAQ 관리</a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a th:href="@{/admin/contactType/manager}" class="nav-link dropdown-toggle">문의사항 유형 관리</a>
+                </div>
+                <div class="nav-item">
+                    <a
+                            th:href="@{/admin/signup}"
+                            class="nav-link"
+
+                    >관리자 회원가입</a
+                    >
+                </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+</div>
+<!-- 네비게이션 바 끝 -->
+<!-- Full Screen Search Start -->
+<section class="top-section position-relative">
+    <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px">
+        <div class="row py-5">
+            <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                <h1 class="display-4 text-white animated zoomIn">FAQ</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-15 align-self-center">
+                <div class="d-flex justify-content-end mb-3">
+                    <a th:href="@{/admin/faq/create}" class="btn btn-primary btn-sm">글쓰기</a>
+                </div>
+                <div class="row py-5">
+                    <div class="col-lg-15 align-self-center">
+                        <div class="accordions is-first-expanded">
+                            <div th:each="faq : ${faqs}" class="accordion">
+                                <div class="accordion-head">
+                                    <span th:text="${faq.title}">FAQ 제목</span>
+                                    <span class="icon">
+                                            <i class="icon fa fa-chevron-right"></i>
+                                        </span>
+                                </div>
+                                <div class="accordion-body">
+                                    <div class="content">
+                                        <span th:utext="${faq.content}">FAQ 내용</span>
+                                        <a th:href="@{|/admin/faq/update/faqID=${faq.id}|}" class="btn btn-warning btn-sm">수정하기</a>
+                                        <a th:href="@{|/admin/faq/delete/faqID=${faq.id}|}" class="btn btn-danger btn-sm">삭제</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 페이징 네비게이션 시작 -->
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item" th:classappend="${currentPage == 0} ? 'disabled'">
+                                <a class="page-link" th:href="@{/admin/faq/manager(page=${currentPage - 1})}" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item" th:each="i : ${#numbers.sequence(0, totalPages - 1)}" th:classappend="${i == currentPage} ? 'active'">
+                                <a class="page-link" th:href="@{/admin/faq/manager(page=${i})}" th:text="${i + 1}">1</a>
+                            </li>
+                            <li class="page-item" th:classappend="${currentPage == totalPages - 1} ? 'disabled'">
+                                <a class="page-link" th:href="@{/admin/faq/manager(page=${currentPage + 1})}" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- 페이징 네비게이션 끝 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Full Screen Search End -->
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light mt-5" style="padding: 20px 0;">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-lg-8 col-md-6">
+                <div class="row gx-5">
+                    <div class="d-flex col-lg-4 col-md-12 pt-3 mb-3">
+                        <div class="section-title section-title-sm position-relative pb-2 mb-2">
+                            <img src="/img/growith_logo_white.png" alt="Growith Logo" class="me-2" style="height: 20px;" />
+                        </div>
+
+                        <div class="d-flex ms-5">
+                            <i class="bi bi-geo-alt text-primary me-2"></i>
+                            <p class="mb-0" style="width: 500px; font-size: 14px;">
+                                충청남도 천안시 서북구 두정중1길 6-9, 2층 201-2호 (두정동, 대림빌딩)
+                            </p>
+                        </div>
+                        <div class="d-flex ms-3">
+                            <i class="bi bi-envelope-open text-primary me-2"></i>
+                            <p class="mb-0" style="font-size: 14px;">growith_@naver.com</p>
+                        </div>
+                        <div class="d-flex ms-5">
+                            <i class="bi bi-telephone text-primary me-2"></i>
+                            <p class="mb-0" style="width: 150px; font-size: 14px;">+82 010-2429-8020</p>
+                        </div>
+                        <!--
+                        <div class="d-flex mt-4">
+                            <a class="btn btn-primary btn-square me-2" href="#"
+                            ><i class="fab fa-twitter fw-normal"></i
+                            ></a>
+                            <a class="btn btn-primary btn-square me-2" href="#"
+                            ><i class="fab fa-facebook-f fw-normal"></i
+                            ></a>
+                            <a class="btn btn-primary btn-square me-2" href="#"
+                            ><i class="fab fa-linkedin-in fw-normal"></i
+                            ></a>
+                            <a class="btn btn-primary btn-square" href="#"
+                            ><i class="fab fa-instagram fw-normal"></i
+                            ></a>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid text-white" style="background: #061429; padding: 10px 0;">
+    <div class="container text-center">
+        <div class="row justify-content-start">
+            <div class="col-lg-8 col-md-6">
+                <div class="d-flex align-items-center" style="height: 50px; justify-content: flex-start">
+                    <p class="mb-0 me-2" style="font-size: 12px;">
+                        &copy;
+                        <a class="text-white border-bottom" href="#">Growith.net</a>.
+                        All Rights Reserved.
+                    </p>
+                    <p class="mb-0 me-2" style="font-size: 12px;">
+                        Designed by
+                        <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                    </p>
+                    <p class="mb-0" style="font-size: 12px;">
+                        Distributed By:
+                        <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                    </p>
+                    <p class="mb-0 ms-2" style="font-size: 12px;"> &</p>
+                    <p class="mb-0 ms-3" style="font-size: 12px;">
+                        <a class="border-bottom" href="https://templatemo.com/tm-574-mexant" target="_blank">Mexant</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"
+><i class="bi bi-arrow-up"></i
+></a>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/lib/wow/wow.min.js"></script>
+<script src="/lib/easing/easing.min.js"></script>
+<script src="/lib/waypoints/waypoints.min.js"></script>
+<script src="/lib/counterup/counterup.min.js"></script>
+<script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="/js/main.js"></script>
+
+<!-- Scripts -->
+<!-- Bootstrap core JavaScript -->
+<script src="/vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script src="/assets/js/isotope.min.js"></script>
+<script src="/assets/js/owl-carousel.js"></script>
+
+<script src="/assets/js/tabs.js"></script>
+<script src="/assets/js/swiper.js"></script>
+<script src="/assets/js/custom.js"></script>
+<script>
+    var interleaveOffset = 0.5;
+
+    var swiperOptions = {
+        loop: true,
+        speed: 1000,
+        grabCursor: true,
+        watchSlidesProgress: true,
+        mousewheelControl: true,
+        keyboardControl: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        on: {
+            progress: function () {
+                var swiper = this;
+                for (var i = 0; i < swiper.slides.length; i++) {
+                    var slideProgress = swiper.slides[i].progress;
+                    var innerOffset = swiper.width * interleaveOffset;
+                    var innerTranslate = slideProgress * innerOffset;
+                    swiper.slides[i].querySelector(".slide-inner").style.transform =
+                        "translate3d(" + innerTranslate + "px, 0, 0)";
+                }
+            },
+            touchStart: function () {
+                var swiper = this;
+                for (var i = 0; i < swiper.slides.length; i++) {
+                    swiper.slides[i].style.transition = "";
+                }
+            },
+            setTransition: function (speed) {
+                var swiper = this;
+                for (var i = 0; i < swiper.slides.length; i++) {
+                    swiper.slides[i].style.transition = speed + "ms";
+                    swiper.slides[i].querySelector(".slide-inner").style.transition =
+                        speed + "ms";
+                }
+            },
+        },
+    };
+
+    var swiper = new Swiper(".swiper-container", swiperOptions);
+</script>
+</body>
+</html>

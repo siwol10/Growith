@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html xmlns:th="http//www.thymeleaf.org"
+         xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+         layout:decorate="~{layouts/layout}">
+<head>
+	<title> projects_current</title>
+</head>
+<body>
+	<th:block layout:fragment="content">
+        <div class="container-fluid bg-primary py-5 bg-header-investor" style="margin-bottom: 90px;">
+            <div class="row py-5">
+                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                    <h1 class="display-4 text-white animated zoomIn">PaDO</h1>
+                    <div class="h5 text-white">현 프로젝트</div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+<!-- About Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="section-title position-relative pb-3 mb-5 text-center">
+            <h5 class="fw-bold text-primary text-uppercase">Project</h5>
+            <h1 class="mb-0" style="font-size: 60px;">PaDO</h1>
+        </div>
+        <div class="container-fluid py-5 bg-light">
+            <div class="container">
+                <div class="row g-5 align-items-center text-center">
+                    <div class="col-lg-6">
+                        <div class="position-relative" style="min-height: 300px;">
+                    <img class="w-100 h-100 rounded" src="/img/Pado.png" style="object-fit: cover;">
+                </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 class="text-dark">
+                            PaDO는 자율주행 분수 시스템으로, 녹조 예방과 제거에 중점을 둡니다. 센서와 데이터 분석을 통해 녹조를 조기에 감지하고,
+                             친환경적으로 수질을 개선하여 도시 미관을 향상시키는 혁신적인 솔루션입니다.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+<!-- Service Start -->
+<div class="container-fluid py-5 bg-light">
+    <div class="container py-5">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">PaDO</h5>
+            <h1 class="mb-0">핵심 기술 & 장점</h1>
+        </div>
+        <div class="row g-5">
+            <!-- 첫 번째 행 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center justify-content-center text-center" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <div class="service-icon">
+                        <img src="/img/icon_wind.png" alt="Icon 1">
+                    </div>
+                    <h4 class="mb-3">물 순환 개선</h4>
+                    <p class="m-0">녹조의 주요 원인인 물 순환 개선</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center justify-content-center text-center" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <div class="service-icon">
+                        <img src="/img/icon_monitoring.png" alt="Icon 2">
+                    </div>
+                    <h4 class="mb-3">수질 모니터링</h4>
+                    <p class="m-0">다양한 센서를 통하여 수질 실시간 모니터링</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center justify-content-center text-center" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <div class="service-icon">
+                        <img src="/img/icon_warning.png" alt="Icon 3">
+                    </div>
+                    <h4 class="mb-3">조기 경고</h4>
+                    <p class="m-0">녹조 발생에 대한 조기 경고 및 예방 조치 시행</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center justify-content-center text-center" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <div class="service-icon">
+                        <img src="/img/icon_broken.png" alt="Icon 4">
+                    </div>
+                    <h4 class="mb-3">자율주행 분수</h4>
+                    <p class="m-0">정확하고 신속한 녹조 제거를 위한 자율주행 분수의 자동화</p>
+                </div>
+            </div>
+            <!-- 두 번째 행 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center justify-content-center text-center" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <div class="service-icon">
+                        <img src="/img/icon_lowprice.png" alt="Icon 5">
+                    </div>
+                    <h4 class="mb-3">비용 절감</h4>
+                    <p class="m-0">자체 기술력으로 다양한 기능 탑재하여 인력과 비용을 절감</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center justify-content-center text-center" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <div class="service-icon">
+                        <img src="/img/icon_flower.png" alt="Icon 6">
+                    </div>
+                    <h4 class="mb-3">미관 개선</h4>
+                    <p class="m-0">분수 기능을 통해 물 순환 및 환경에 따른 적절한 미관 제공</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center justify-content-center text-center" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <div class="service-icon">
+                        <img src="/img/icon_design.png" alt="Icon 7">
+                    </div>
+                    <h4 class="mb-3">커스터마이징 디자인</h4>
+                    <p class="m-0">용도에 맞는 커스터마이징 디자인 / LED 조명 시스템</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center justify-content-center text-center" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <div class="service-icon">
+                        <img src="/img/icon_nature.png" alt="Icon 8">
+                    </div>
+                    <h4 class="mb-3">친환경 기술</h4>
+                    <p class="m-0">화학물질 사용을 최소화하면서 자연적인 물 순환을 이용한 환경친화적인 기술</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+
+<!-- 적용 사례 Start -->
+
+<!--  
+<div class="container-fluid py-5">
+    <div class="container py-5">
+                <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+	                <h5 class="fw-bold text-primary text-uppercase">PaDO</h5>
+	                <h1 class="mb-0">적용 사례</h1>
+	            </div>
+            <div class="container-fluid py-5 bg-light">
+    <div class="container">
+    <div class="row g-5 align-items-center">
+        <div class="col-lg-6 order-lg-2"> 
+            <div class="position-relative" style="min-height: 300px;">
+                <img class="w-100 h-100 rounded" src="/img/growith_logo_bluewhaleoh.png" style="max-width: 500px;">
+            </div>
+        </div>
+        <div class="col-lg-6 order-lg-1"> 
+            <div class="pb-3 mb-3">
+                <h2 class="mb-0"> PaDO의 적용사례는 현재 준비중에 있습니다. </h2>
+            </div>
+            <p> </p>
+            <p> </p>
+			<p> </p>
+            <div class="pb-3 mb-3">
+                <h2 class="mb-0"> </h2>
+            </div> 
+            <p> </p>
+            <p> </p>
+			<p> </p>
+			
+        </div>
+    </div>
+</div>
+</div>
+    </div>
+</div> -->
+<!-- 적용사례 End -->
+
+
+
+    <!-- Vendor Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5 mb-5">
+            <div class="bg-white">
+
+            </div>
+        </div>
+    </div>
+    <!-- Vendor End -->
+        
+    </th:block>
+</body>
+</html>

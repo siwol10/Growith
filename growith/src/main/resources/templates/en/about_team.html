@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/en_layout}">
+<head>
+    <title>About Team</title>
+</head>
+<body>
+<th:block layout:fragment="content">
+    <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+        <div class="row py-5">
+            <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                <h1 class="display-4 text-white animated zoomIn">Team Introduction</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <!-- Team Member Item -->
+                <div class="col-lg-3">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden" style="height: 350px; background-color: #f8f9fa;">
+                            <img class="img-fluid w-100 h-100" src="/img/team_1.jpg" alt="" style="object-fit: cover;">
+                            <!--
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                            -->
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary">Kang Myungjun</h4>
+                            <h5 class="text-uppercase m-0">CEO</h5>
+                            <p class="text-muted">Bachelor's in Electrical Engineering, Experience in hardware and software development, Project management and startup experience</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat Team Member Item -->
+                <div class="col-lg-3">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden" style="height: 350px; background-color: #f8f9fa;">
+                            <img class="img-fluid w-100 h-100" src="/img/team_2.jpg" alt="" style="object-fit: cover;">
+                            <!--
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                            -->
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary">Lee Sangjun</h4>
+                            <h5 class="text-uppercase m-0">HW Development and Driving System Development</h5>
+                            <p class="text-muted">Department of Electrical and Electronic Control Engineering, Control and Measurement, ISO9001 Certification, Research on various robot operating systems</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden" style="height: 350px; background-color: #f8f9fa;">
+                            <img class="img-fluid w-100 h-100" src="/img/team_3.jpg" alt="" style="object-fit: cover;">
+                            <!--
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                            -->
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary">Yang Jinmo</h4>
+                            <h5 class="text-uppercase m-0">Control System Development</h5>
+                            <p class="text-muted">Department of Electrical and Electronic Control Engineering, Control and Measurement, Completed robot operating system courses, Research and experimentation on various robot operating systems</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden" style="height: 350px; background-color: #f8f9fa;">
+                            <img class="img-fluid w-100 h-100" src="/img/team_4.png" alt="" style="object-fit: cover;">
+                            <!--
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                            -->
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary">Lim Jongchan</h4>
+                            <h5 class="text-uppercase m-0">Mechanical Internal Components and Design</h5>
+                            <p class="text-muted">Undergraduate Researcher in Mold Design Engineering, Mechanical Engineering Certification, Experience in various machine design and product manufacturing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden" style="height: 350px; background-color: #f8f9fa;">
+                            <img class="img-fluid w-100 h-100" src="/img/team_5.jpg" alt="" style="object-fit: cover;">
+                            <!--
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                            -->
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary">Na Yeonsu</h4>
+                            <h5 class="text-uppercase m-0">Exterior Design</h5>
+                            <p class="text-muted">Bachelor’s in Design Management, Managed university student promotion team, Experience in various design projects</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden" style="height: 350px; background-color: #f8f9fa;">
+                            <img class="img-fluid w-100 h-100" src="/img/team_6.jpg" alt="" style="object-fit: cover;">
+                            <!--
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                            -->
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary">Yoon Seungjae</h4>
+                            <h5 class="text-uppercase m-0">Project Manager</h5>
+                            <p class="text-muted">Department of Electrical and Electronic Control Engineering, Semiconductor major, Extensive project management experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden" style="height: 350px; background-color: #f8f9fa;">
+                            <img class="img-fluid w-100 h-100" src="/img/team_7.jpg" alt="" style="object-fit: cover;">
+                            <!--
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                            -->
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary">Kim Minseo</h4>
+                            <h5 class="text-uppercase m-0">Business Operations and Documentation</h5>
+                            <p class="text-muted">Bachelor’s in Electrical Engineering, Extensive experience in project management and marketing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden" style="height: 350px; background-color: #f8f9fa;">
+                            <img class="img-fluid w-100 h-100" src="/img/team_8.jpg" alt="" style="object-fit: cover;">
+                            <!--
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                            -->
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary">Lee Hyunseo</h4>
+                            <h5 class="text-uppercase m-0">SW Development and Algorithm Development</h5>
+                            <p class="text-muted">Department of Artificial Intelligence, Experience in various software development and algorithm research</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+</th:block>
+</body>
+</html>

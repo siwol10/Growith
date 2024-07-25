@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns:th="http//www.thymeleaf.org"
+         xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+         layout:decorate="~{layouts/layout}">
+<head>
+	<title> projects_gallery </title>
+</head>
+<body>
+	<th:block layout:fragment="content">
+        <div class="container-fluid bg-primary py-5 bg-header-investor" style="margin-bottom: 90px;">
+            <div class="row py-5">
+                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                    <h1 class="display-4 text-white animated zoomIn">제품 갤러리</h1>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    
+<!-- 준비 중입니다 섹션 시작 -->
+    <div class="container py-5 text-center">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="d-inline-block bg-white p-4 rounded shadow-sm mb-4">
+                    <img src="/img/growith_logo_bluewhaleoh.png" style="width: 300px; height: auto;">
+                </div>
+                <h2 class="display-4 mb-4">준비중 입니다</h2>
+                <p class="lead mb-4">GROWITH 제품 갤러리는 현재 준비중에 있습니다.</p>
+                <a href="javascript:history.back()" class="btn btn-primary mt-4">돌아가기</a>
+            </div>
+        </div>
+    </div>
+<!-- 준비 중입니다 섹션 끝 -->
+
+
+<!-- Team Start -->
+
+<!-- 
+<div class="container-fluid py-5">
+<div class="position-relative">
+            <div class="position-absolute top-0 start-0 mt-3 ms-5">
+                <h5 class="fw-bold text-primary">6 건</h5>
+            </div>
+    </div>
+    <div class="container py-5">
+        <div class="position-relative">
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-4">
+                <div class="team-item bg-light rounded overflow-hidden">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="/img/team-1.jpg" alt="">
+                    </div>
+                    <div class="text-center py-4">
+                        <h4 class="text-primary">갤러리 제목</h4>
+                        <p class="text-uppercase m-0">Designation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-item bg-light rounded overflow-hidden">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="/img/team-2.jpg" alt="">
+                    </div>
+                    <div class="text-center py-4">
+                        <h4 class="text-primary">갤러리 제목</h4>
+                        <p class="text-uppercase m-0">Designation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-item bg-light rounded overflow-hidden">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="/img/team-3.jpg" alt="">
+                    </div>
+                    <div class="text-center py-4">
+                        <h4 class="text-primary">갤러리 제목</h4>
+                        <p class="text-uppercase m-0">Designation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-item bg-light rounded overflow-hidden">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="/img/team-3.jpg" alt="">
+                    </div>
+                    <div class="text-center py-4">
+                        <h4 class="text-primary">갤러리 제목</h4>
+                        <p class="text-uppercase m-0">Designation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-item bg-light rounded overflow-hidden">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="/img/team-3.jpg" alt="">
+                    </div>
+                    <div class="text-center py-4">
+                        <h4 class="text-primary">갤러리 제목</h4>
+                        <p class="text-uppercase m-0">Designation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-item bg-light rounded overflow-hidden">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="/img/team-3.jpg" alt="">
+                    </div>
+                    <div class="text-center py-4">
+                        <h4 class="text-primary">갤러리 제목</h4>
+                        <p class="text-uppercase m-0">Designation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  -->
+<!-- Team End -->
+
+</body>
+</html>

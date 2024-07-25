@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/en_layout}">
+<head>
+    <title>support_contactus</title>
+</head>
+<body>
+<th:block layout:fragment="content">
+    <div class="container-fluid bg-primary py-5 bg-header-investor" style="margin-bottom: 90px;">
+        <div class="row py-5">
+            <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                <h1 class="display-4 text-white animated zoomIn">Contact Us</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Contact Us</h5>
+                <h1 class="mb-0">Please contact us if you have any questions.</h1>
+            </div>
+            <div class="row g-5 mb-5 justify-content-center">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                            <i class="fa fa-phone-alt text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="mb-2">Call to ask any question</h5>
+                            <h4 class="text-primary mb-0">+82 010-2429-8020</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                            <i class="fa fa-envelope-open text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="mb-2">Email to get free quote</h5>
+                            <h4 class="text-primary mb-0">myeng07@naver.com</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5 justify-content-center">
+                <div class="col-lg-6">
+                    <form id="contactForm" th:action="@{/en/support/contact}" method="post">
+                        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+                        <input type="hidden" id="contactId" name="contactId" th:value="${contact.id}" />
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <h5>Please select the type of inquiry.</h5>
+                                <select name="type" class="form-control border-0 bg-light px-4" style="height: 55px;">
+                                    <option th:each="contactType : ${contactTypeList}" th:value="${contactType.id}" th:selected="${contact.type?.id == contactType.id}" th:text="${contactType.content}"></option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <input name="name" type="text" class="form-control border-0 bg-light px-4" placeholder="Your Name" style="height: 55px;">
+                            </div>
+                            <div class="col-12">
+                                <input name="email" type="email" class="form-control border-0 bg-light px-4" placeholder="Your Email" style="height: 55px;">
+                            </div>
+                            <div class="col-12">
+                                <input name="subject" type="text" class="form-control border-0 bg-light px-4" placeholder="Subject" style="height: 55px;">
+                            </div>
+                            <div class="col-12">
+                                <textarea name="content" class="form-control border-0 bg-light px-4 py-3" rows="4" placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+</th:block>
+</body>
+</html>

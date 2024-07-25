@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/en_layout}">
+<head>
+    <title>About Overview</title>
+</head>
+<body>
+<th:block layout:fragment="content">
+    <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+        <div class="row py-5">
+            <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                <h1 class="display-4 text-white animated zoomIn">Company Overview</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+    <!-- Company Overview Title -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <!-- Container with image and lengthy content -->
+            <div class="position-relative">
+                <!-- Title -->
+                <div class="section-title position-relative pb-3 mb-5" style="max-width: 800px; text-align: left;">
+                    <h1 class="fw-bold text-black text-uppercase" style="color: #06A3DA;">Hello! GROWITH!<br> <br> </h1>
+                    <h3>
+                        GROWITH is a <span style="color: #06A3DA;">'Grow Together'</span> startup that drives various innovative projects.
+                    </h3>
+                </div>
+                <!-- Image and background block -->
+                <div class="position-relative overflow-hidden">
+                    <!-- Black background block -->
+                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(9, 30, 62, .7); z-index: 1;"></div>
+
+                    <!-- Image -->
+                    <div class="team-img position-relative overflow-hidden" style="height: 600px; width: 100%; max-width: 100%; z-index: 0;">
+                        <img class="img-fluid" src="/img/water_main.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+
+                    <!-- Text -->
+                    <div class="position-absolute top-50 start-50 translate-middle w-75 text-center" style="z-index: 2;">
+                        <img src="/img/growith_logo_whitewhale.png" alt="Growith Logo" class="me-2" style="height: 200px;">
+                        <h5 class="text-white p-4">
+                            We explore endless possibilities with various ideas and technologies. Currently, we are developing an autonomous fountain system called "PaDO" for improving water quality. But our challenges do not stop here. We continually strive to create a better future through environmental protection and technological innovation.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Company Overview Title -->
+
+    <!-- Title Start -->
+    <div class="container py-5">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">GROWITH</h5>
+            <h1 class="mb-0">Vision & Mission</h1>
+        </div>
+    </div>
+    <!-- Title End -->
+
+    <!-- Vision and Mission Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <!-- Vision Section -->
+                <div class="col-lg-6 d-flex align-items-stretch">
+                    <div class="bg-light rounded p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="section-title position-relative pb-3 mb-5">
+                                <h3 class="mb-0">Vision</h3>
+                            </div>
+                            <h4>
+                                <p class="mb-4">Innovative technology development for a sustainable future</p>
+                            </h4>
+                            <p class="mb-4">We are committed to protecting the earth and the environment while providing a sustainable world for future generations. Our technology harmonizes with nature and offers innovative solutions.</p>
+                            <ul>
+                                <li>Sustainable energy solutions</li>
+                                <li>Technology for environmental protection</li>
+                                <li>Sustainable development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mission Section -->
+                <div class="col-lg-6 d-flex align-items-stretch">
+                    <div class="bg-light rounded p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="section-title position-relative pb-3 mb-5">
+                                <h3 class="mb-0">Mission</h3>
+                            </div>
+                            <h4>
+                                <p class="mb-4">Providing creative and innovative solutions in various fields to make a better world</p>
+                            </h4>
+                            <p class="mb-4">We strive to enhance the quality of human life and create a better world through innovative solutions in all fields. Our creativity and innovation open up endless possibilities.</p>
+                            <ul>
+                                <li>Development of innovative products</li>
+                                <li>Improving customer satisfaction</li>
+                                <li>Fulfilling social responsibilities</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vision and Mission End -->
+
+    <!-- Core Values Start -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">GROWITH</h5>
+                <h1 class="mb-0">Core Values</h1>
+            </div>
+            <div class="row g-5">
+                <!-- First Core Value -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-white rounded d-flex flex-column align-items-center justify-content-center text-center" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                        <div class="service-icon">
+                            <img src="/img/icon_planet.png" alt="Icon 1">
+                        </div>
+                        <h4 class="mb-3">Environmental Conservation</h4>
+                        <p class="m-0">Minimizing the environmental impact of all activities</p>
+                    </div>
+                </div>
+                <!-- Second Core Value -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-white rounded d-flex flex-column align-items-center justify-content-center text-center" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                        <div class="service-icon">
+                            <img src="/img/icon_progress.png" alt="Icon 2">
+                        </div>
+                        <h4 class="mb-3">Continuous Improvement</h4>
+                        <p class="m-0">Leading technology through relentless research and development</p>
+                    </div>
+                </div>
+                <!-- Third Core Value -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-white rounded d-flex flex-column align-items-center justify-content-center text-center" style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                        <div class="service-icon">
+                            <img src="/img/icon_solution.png" alt="Icon 4">
+                        </div>
+                        <h4 class="mb-3">Innovation</h4>
+                        <p class="m-0">Solving problems through creative and new ideas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Core Values End -->
+
+    <!-- Future Plans Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">GROWITH</h5>
+                <h2 class="mb-0">Future Plans</h2>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="row g-5">
+                        <div class="col-12">
+                            <div class="bg-white rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <img src="/img/icon_flight.png" style="width: 60px; height: 60px;">
+                            </div>
+                            <h4>Market Expansion</h4>
+                            <p class="mb-0">Expand pilot projects in collaboration with local governments and secure additional contracts based on successful cases.</p>
+                        </div>
+                        <div class="col-12">
+                            <div class="bg-white rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <img src="/img/icon_menu.png" style="width: 60px; height: 60px;">
+                            </div>
+                            <h4>Product Line Expansion</h4>
+                            <p class="mb-0">Develop product lines tailored to seasonal factors and diverse customer demands.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                    <div class="position-relative" style="width: 80%; height: 80%;">
+                        <img class="w-100 h-100 rounded" src="/img/growith_logo_gradationwhale.png" style="object-fit: contain;">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row g-5">
+                        <div class="col-12">
+                            <div class="bg-white rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <img src="/img/icon_artificial.png" style="width: 60px; height: 60px;">
+                            </div>
+                            <h4>AI Integration</h4>
+                            <p class="mb-0">Provide predictive services for algal blooms using AI and propose proactive response measures.</p>
+                        </div>
+                        <div class="col-12">
+                            <div class="bg-white rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <img src="/img/icon_database.png" style="width: 60px; height: 60px;">
+                            </div>
+                            <h4>Data Sales Business</h4>
+                            <p class="mb-0">Promote data sales business using accumulated water quality data, providing and selling data to companies and research institutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Additional Explanation -->
+            <div class="container py-5">
+                <div class="text-center mx-auto" style="max-width: 600px;">
+                    <h3 class="mb-0">GROWITH's Future Plans</h3>
+                </div>
+                <div class="text-center mx-auto" style="max-width: 800px;">
+                    <p class="mb-4" style="font-size: 1.125rem; line-height: 1.6;">
+                        GROWITH plans to continue pushing forward with various innovative projects beyond water quality improvement. Our goal is to provide creative and innovative solutions in various fields to create a better world. We will continue to realize GROWITH's values not only through the current PaDO project but also in future challenges.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Future Plans End -->
+
+</th:block>
+</body>
+</html>
